@@ -260,13 +260,35 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	Logo
 \*------------------------------------*/
 
+@font-face{
+    font-family: 'Colus';
+    src: url('../fonts/Colus-Regular.eot');
+    src: url('../fonts/Colus-Regular.eot') format('embedded-opentype'),
+            url('../fonts/Colus-Regular.woff2') format('woff2'),
+            url('../fonts/Colus-Regular.woff') format('woff'),
+            url('../fonts/Colus-Regular.ttf') format('truetype'),
+            url('../fonts/Colus-Regular.svg') format('svg');
+}
+
 .navbar-brand {
     padding: 0;
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
     max-height: 50px;
+    font-family: 'Colus';
+    font-size: 30px;
     display: block;
+    margin-top: 10px;
+}
+
+.navbar-brand .logo {
+    color: #000;
+    margin-top: 15px;
+} 
+
+.navbar-brand .logo-alt {
+    color: #fff;
 }
 
 #nav:not(.nav-transparent):not(.fixed-nav) .navbar-brand .logo-alt {
